@@ -12,7 +12,7 @@ function StartPage() {
 						</p>
 					</div>
 				</div>
-				<div className='flex justify-center bg-slate-800 absolute bottom-0 w-11/12 md:w-5/6 lg:w-full  rounded-2xl shadow-xl shadow-slate-900  translate-y-1/2 border-b-4 md:border-b-8 border-slate-300 py-8 sm:py-14 '>
+				<div className='flex overflow-visible z-20 justify-center bg-slate-800 absolute bottom-0 w-11/12 md:w-5/6 lg:4/6 xl:w-full  rounded-2xl shadow-xl shadow-slate-900  translate-y-1/2 border-b-4 md:border-b-8 border-slate-300 py-8 sm:py-14 '>
 					<label htmlFor='username' className='sr-only'>
 						What's your name?
 					</label>
@@ -23,7 +23,9 @@ function StartPage() {
 							type='text'
 							id='username'
 						/>
-						<button className='bg-slate-900 mt-3 sm:mt-0 rounded-md sm:rounded-l-none  font-semibold  py-3 px-6 sm:px-8'>
+						<button
+							onClick={() => console.log('clicked')}
+							className='bg-slate-900 mt-3 sm:mt-0 rounded-md sm:rounded-l-none  font-semibold  py-3 px-6 sm:px-8'>
 							Login
 						</button>
 					</div>
