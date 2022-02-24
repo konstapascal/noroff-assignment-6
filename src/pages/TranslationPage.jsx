@@ -7,7 +7,7 @@ function TranslationPage() {
 				</label>
 				<input
 					placeholder='Type here..'
-					className='  text-center  py-3 xl:py-4 bg-slate-100 rounded-md sm:rounded-r-none w-11/12 lg:w-64  sm:w-auto   text-slate-900'
+					className='  text-center  py-3 xl:py-4 bg-slate-300 rounded-md sm:rounded-r-none w-11/12 lg:w-64  sm:w-auto   text-slate-900'
 					type='text'
 					id='translate'
 				/>
@@ -17,14 +17,14 @@ function TranslationPage() {
 					Translate
 				</button>
 			</div>
-			<div className='bg-slate-800 '>
-				<div className=' container pt-20 mx-auto max-w-5xl text-center text-md xl:text-xl'>
+			<div className='bg-slate-800 pt-20'>
+				<div className=' container  mx-auto shadow-xl shadow-slate-900 max-w-5xl text-center text-md xl:text-xl'>
 					<textarea
 						readOnly
-						className=' w-11/12 lg:w-full rounded-t-md read resize-none text-slate-900 bg-slate-100  h-56'
+						className=' w-11/12 lg:w-full rounded-t-2xl read resize-none text-slate-900  bg-slate-300  h-56'
 					/>
 					<div
-						className='bg-slate-900 rounded-b-md py-4 font-semibold
+						className='bg-slate-900 border-b-4 md:border-b-8 border-slate-300 rounded-b-2xl py-4 font-semibold
 					'>
 						Translation
 					</div>

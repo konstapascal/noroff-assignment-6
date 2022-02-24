@@ -19,7 +19,7 @@ function StartPage() {
 					<div className='sm:flex text-md xl:text-xl '>
 						<input
 							placeholder="What's your name?"
-							className='  text-center  py-3 xl:py-4 bg-slate-100 rounded-md sm:rounded-r-none w-11/12 lg:w-64  sm:w-auto   text-slate-900'
+							className='  text-center  py-3 xl:py-4 bg-slate-300 rounded-md sm:rounded-r-none w-11/12 lg:w-64  sm:w-auto   text-slate-900'
 							type='text'
 							id='username'
 						/>
