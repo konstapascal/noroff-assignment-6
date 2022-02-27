@@ -4,7 +4,7 @@ module.exports = {
 		fontFamily: {
 			sister: ['"Love Ya Like A Sister"']
 		},
-		extend: {}
+		extend: { colors: { customCyan: '#2384B4' } }
 	},
 	plugins: []
 };
