@@ -23,14 +23,16 @@ export async function addTranslation(username, translation) {
 	return res;
 }
 
-export async function deleteTranslations(username, translationsToDeleteArr) {
+export async function deleteTranslations(username, translationsToDelete) {
 	const user = await getUsername(username);
-	const translations = user.translations;
+	const translations = [...user.translations];
 
-	// Filtering old translations by removing the ones to be deleted
-	const newTranslations = translations.filter(
-		translation => !translationsToDeleteArr.includes(translation)
-	);
+	// Removing translations that are included in translationsToDelete
+	// Removing first match only, iterating reversed array (most recent translations)
+	for (const translation of translationsToDelete) {
+		const idx = translations.reverse().findIndex(el => el === translation);
+		translations.splice(idx, 1);
+	}
 
 	// Update user with new translations
 	const req = await fetch(`${BASE_URL}/${user.id}`, {
@@ -40,7 +42,7 @@ export async function deleteTranslations(username, translationsToDeleteArr) {
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify({
-			translations: newTranslations
+			translations
 		})
 	});
 	if (!req.ok) throw new Error('Could not patch translation!');
