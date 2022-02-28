@@ -1,6 +1,11 @@
 import React, { useRef } from 'react';
+import { patchTranslation } from '../api/translations';
+import { useUser } from '../context/UserContext';
+
+import { displayTranslationSigns, removeChildNodes } from '../utils/translation';
 
 function TranslationForm({ translationArea }) {
+	const { username } = useUser();
 	const translationInput = useRef(null);
 
 	function onTranslateClick(event) {
@@ -10,22 +15,14 @@ function TranslationForm({ translationArea }) {
 		const inputEl = translationInput.current;
 
 		// Clear previous translation
-		while (areaEl.hasChildNodes()) {
-			areaEl.removeChild(areaEl.lastChild);
-		}
+		removeChildNodes(areaEl);
 
-		// Display new translation
-		for (const letter of inputEl.value) {
-			const img = new Image();
+		// Display new translation, save to database
+		displayTranslationSigns(inputEl.value, areaEl);
+		patchTranslation(username, inputEl.value);
 
-			img.style.display = 'inline';
-			img.style.height = '75px';
-			img.src = letter === ' ' ? 'signs/space.png' : `signs/${letter}.png`;
-
-			areaEl.appendChild(img);
-		}
-
-		inputEl.focus();
+		// Reset input
+		inputEl.value = '';
 	}
 	return (
 		<form className='sm:flex  container mx-auto max-w-5xl overflow-visible -mt-4 z-20 justify-center bg-slate-800  w-11/12 md:w-5/6 lg:4/6 xl:w-full  rounded-2xl shadow-xl shadow-slate-900  translate-y-1/2 border-b-4 md:border-b-8 border-slate-300 py-8 sm:py-14 '>

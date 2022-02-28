@@ -28,5 +28,3 @@ export async function createUsername(username) {
 
 	return user;
 }
-
-export async function addTranslation(username) {}
