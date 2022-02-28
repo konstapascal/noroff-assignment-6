@@ -16,7 +16,8 @@ function TranslationPage() {
 	return (
 		<section className='bg-slate-900 '>
 			<div className='container mx-auto pt-6 md:pt-12 xl:pt-20   max-w-5xl text-center text-md xl:text-xl'>
-				<div className='w-11/12 md:w-5/6 lg:4/6 xl:w-full mx-auto'>
+				<h1 className='text-5xl font-bold'>Translation Page</h1>
+				<div className='w-11/12 md:w-5/6 lg:4/6 xl:w-full mx-auto mt-14'>
 					<div
 						readOnly
 						ref={translationArea}

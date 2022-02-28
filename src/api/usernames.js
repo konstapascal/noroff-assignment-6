@@ -8,7 +8,7 @@ export async function getUsername(username) {
 	const userArr = await req.json();
 	const user = userArr.pop();
 
-	return user ?? null;
+	return user;
 }
 export async function createUsername(username) {
 	const req = await fetch(BASE_URL, {

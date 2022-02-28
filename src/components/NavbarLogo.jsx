@@ -7,7 +7,9 @@ function NavbarLogo() {
 	return (
 		<div
 			className={
-				'text-4xl md:text-5xl font-sister ' + (location.pathname !== '/' && 'hidden lg:block')
+				'text-4xl md:text-5xl font-sister ' +
+				((location.pathname === '/translation' || location.pathname === '/profile') &&
+					'hidden lg:block')
 			}>
 			Lost in Translation
 		</div>
