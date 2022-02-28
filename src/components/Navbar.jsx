@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import UserInfo from './UserInfo';
+import NavbarLinks from './NavbarLinks';
 
 function Navbar() {
 	const location = useLocation();
@@ -14,7 +14,7 @@ function Navbar() {
 					}>
 					Lost in Translation
 				</div>
-				{location.pathname !== '/' && <UserInfo />}
+				{location.pathname !== '/' && <NavbarLinks />}
 			</nav>
 		</section>
 	);

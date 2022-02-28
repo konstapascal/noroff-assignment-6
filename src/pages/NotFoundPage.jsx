@@ -1,24 +1,6 @@
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 
-import UserForm from '../components/UserForm';
-import { useUser } from '../context/UserContext';
-import { storageRead } from '../utils/storage';
-
-function StartPage() {
-	const { username, login } = useUser();
-	const navigate = useNavigate();
-
-	// Side effects
-	useEffect(() => {
-		// If user is logged in, do not allow him on / without logging out
-		if (username) return navigate('/translation');
-
-		// If username is stored in local storage, log in that user
-		const localUsername = storageRead('userInfo');
-		if (localUsername) return login(localUsername);
-	}, [navigate, username, login]);
-
+function NotFoundPage() {
 	return (
 		<section className='bg-slate-900 '>
 			<div className='container  mx-auto max-w-5xl relative flex justify-center items-stretch text-center '>
@@ -32,10 +14,9 @@ function StartPage() {
 						</p>
 					</div>
 				</div>
-				<UserForm />
 			</div>
 		</section>
 	);
 }
 
-export default StartPage;
+export default NotFoundPage;
