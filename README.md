@@ -11,7 +11,7 @@
 
 Noroff assignment number 5, written by **Konstantinos Pascal**.
 
-The assignment is a translation app written in **React** and styled with **Tailwind**. It makes use of one API for managing users and translations.
+The assignment is a sign language translation app written in **React** and styled with **Tailwind**. It makes use of one API for managing users and translations.
 
 The [**JSON Server API**](https://kp-noroff-assignment-api.herokuapp.com/translations) is hosted on Heroku and handles the creation of new users and CRUD operations on the users translations array.
 
@@ -27,28 +27,27 @@ The [**JSON Server API**](https://kp-noroff-assignment-api.herokuapp.com/transla
 
 ## Live Demo
 
-<!-- **https://assignment-5-vue.herokuapp.com/** -->
+**https://assignment-6-react.herokuapp.com/**
 
 ## Screenshots
 
-<!--
 <p align="center">
 <img src="./public/StartPage.png">
 </p>
 
 <p align="center">
-<img src="./public/QuestionsPage.png">
+<img src="./public/TranslationPage.png">
 </p>
 
 <p align="center">
-<img src="./public/ResultsPage.png">
-</p> -->
+<img src="./public/ProfilePage.png">
+</p>
 
 ## Diagram
 
-<!-- <p align="center">
-<img src="./public/QuizAppDiagram.png">
-</p> -->
+<p align="center">
+<img src="./public/LostInTranslationAppDiagram.png">
+</p>
 
 ## Install
 
