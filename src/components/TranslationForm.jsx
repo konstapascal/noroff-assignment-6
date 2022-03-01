@@ -17,7 +17,7 @@ function TranslationForm({ translationArea }) {
 	const { username } = useUser();
 
 	function onTranslateClick(data) {
-		const translation = data.translation.trim();
+		const translation = data.translation.toLowerCase().trim();
 
 		// Clear previous translation
 		removeChildNodes(translationArea.current);
