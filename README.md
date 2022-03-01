@@ -9,7 +9,7 @@
 <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
 </a>
 
-Noroff assignment number 5, written by **Konstantinos Pascal**.
+Noroff assignment number 6, written by **Konstantinos Pascal**.
 
 The assignment is a sign language translation app written in **React** and styled with **Tailwind**. It makes use of one API for managing users and translations.
 
@@ -77,7 +77,7 @@ npm run start
 
 ## Maintainers
 
-[@konstapascal](https://github.com/konstapascal)\
+[@konstapascal](https://github.com/konstapascal)
 
 ## Contributing
 
