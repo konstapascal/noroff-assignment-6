@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+<h1 align="center">Noroff Assignment 6</h1>
+<p align="center">
+	<img src="https://www.pinclipart.com/picdir/big/537-5374089_react-js-logo-clipart.png" width="200">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+<img alt="Version" src="https://img.shields.io/badge/version-0.1-blue.svg?cacheSeconds=2592000" />
+<a href="#" target="_blank">
+<img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+</a>
 
-## Available Scripts
+Noroff assignment number 5, written by **Konstantinos Pascal**.
 
-In the project directory, you can run:
+The assignment is a translation app written in **React** and styled with **Tailwind**. It makes use of one API for managing users and translations.
 
-### `npm start`
+The [**JSON Server API**](https://kp-noroff-assignment-api.herokuapp.com/translations) is hosted on Heroku and handles the creation of new users and CRUD operations on the users translations array.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-  [Live Demo](#live-demo)
+-  [Screenshots](#screenshots)
+-  [Diagram](#diagram)
+-  [Install](#install)
+-  [Maintainers](#maintainers)
+-  [Contributing](#contributing)
+-  [License](#license)
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- **https://assignment-5-vue.herokuapp.com/** -->
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!--
+<p align="center">
+<img src="./public/StartPage.png">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+<img src="./public/QuestionsPage.png">
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+<img src="./public/ResultsPage.png">
+</p> -->
 
-### `npm run eject`
+## Diagram
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- <p align="center">
+<img src="./public/QuizAppDiagram.png">
+</p> -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repository using:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+git clone https://github.com/konstapascal/noroff-assignment-6.git
+```
 
-## Learn More
+Go inside the cloned repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+cd noroff-assignment-6
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Install node module dependencies using:
 
-### Code Splitting
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Serve the web application locally using:
 
-### Analyzing the Bundle Size
+```
+npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Maintainers
 
-### Making a Progressive Web App
+[@konstapascal](https://github.com/konstapascal)\
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+PRs accepted.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT © 2022 Konstantinos Pascal

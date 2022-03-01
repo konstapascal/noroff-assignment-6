@@ -1,19 +1,20 @@
-import { Link } from 'react-router-dom';
-import UserInfo from './UserInfo';
+import { useLocation } from 'react-router-dom';
+
+import NavbarLinks from './NavbarLinks';
+import NavbarLogo from './NavbarLogo';
 
 function Navbar() {
+	const location = useLocation();
+
 	return (
-		<nav className='bg-slate-800'>
-			<div className='container py-8 mx-auto flex items-center justify-between'>
-				<div className='text-5xl'>Lost in Translation</div>
-				<div className='flex text-lg text-blue-400 underline gap-4'>
-					<Link to='/'>Home</Link>
-					<Link to='/translation'>Translation</Link>
-					<Link to='/profile'>Profile</Link>
-				</div>
-				<UserInfo />
-			</div>
-		</nav>
+		<section className='bg-slate-900 border-b-4 border-slate-800'>
+			<nav className='container py-8 px-4 xl:px-0 max-w-5xl mx-auto flex  items-center text-center  justify-center lg:justify-between gap-6 '>
+				<NavbarLogo />
+				{(location.pathname === '/translation' || location.pathname === '/profile') && (
+					<NavbarLinks />
+				)}
+			</nav>
+		</section>
 	);
 }
 
