@@ -14,9 +14,9 @@ function StartPage() {
 		// If user is logged in, do not allow him on / without logging out
 		if (username) navigate('/translation');
 
-		// If username is stored in local storage, log in that user
-		const localUsername = storageRead('userInfo');
-		if (localUsername) login(localUsername);
+		// If username is stored in storage, log in that user
+		const sessionUsername = storageRead('userInfo');
+		if (sessionUsername) login(sessionUsername);
 	}, [navigate, username, login]);
 
 	return (

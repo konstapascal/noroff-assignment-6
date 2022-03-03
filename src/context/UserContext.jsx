@@ -13,13 +13,13 @@ export function UserProvider({ children }) {
 	const [username, setUsername] = useState(null);
 
 	function login(_username) {
-		// Save user in local storage and state
+		// Save user in session storage and state
 		storageSave('userInfo', { id: _username.id, username: _username.username });
 		setUsername(_username.username);
 	}
 
 	function logout(_username) {
-		// Clear user in local storage and state
+		// Clear user in session storage and state
 		storageSave('userInfo', {});
 		setUsername(null);
 	}
